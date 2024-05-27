@@ -16,3 +16,6 @@ yarn esbuild src/wrapper.mjs \
   --target=node20 \
   --outfile=dist/wrapper.cjs \
   --banner:js='#!/usr/bin/env node'
+
+chmod +x dist/index.cjs
+chmod +x dist/wrapper.cjs
