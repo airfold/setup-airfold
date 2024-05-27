@@ -20035,6 +20035,7 @@ async function main() {
 (async () => {
   await main();
 })();
+// @license MIT
 /*! Bundled license information:
 
 undici/lib/fetch/body.js:

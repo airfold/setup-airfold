@@ -20067,6 +20067,7 @@ async function setup() {
     import_core.default.setFailed(error.message);
   }
 })();
+// @license MIT
 /*! Bundled license information:
 
 undici/lib/fetch/body.js:

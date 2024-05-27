@@ -1,3 +1,4 @@
+// @license MIT
 import io from "@actions/io";
 import { platform } from "node:os";
 import { sep } from "node:path";

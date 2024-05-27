@@ -1,3 +1,4 @@
+// @license MIT
 import core from "@actions/core";
 import io from "@actions/io";
 import * as os from "node:os";
