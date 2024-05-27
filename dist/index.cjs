@@ -20005,7 +20005,7 @@ async function installWrapper(path) {
     throw e;
   }
   try {
-    source = (0, import_node_path.resolve)([__dirname, "dist", "wrapper.cjs"].join(import_node_path.sep));
+    source = (0, import_node_path.resolve)([__dirname, "wrapper.cjs"].join(import_node_path.sep));
     target = [path, "af"].join(import_node_path.sep);
     import_core.default.debug(`Copying ${source} to ${target}.`);
     await import_io.default.cp(source, target);

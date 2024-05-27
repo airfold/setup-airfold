@@ -27,7 +27,7 @@ async function installWrapper(path) {
   }
 
   try {
-    source = resolve([__dirname, "dist", "wrapper.cjs"].join(sep));
+    source = resolve([__dirname, "wrapper.cjs"].join(sep));
     target = [path, "af"].join(sep);
     core.debug(`Copying ${source} to ${target}.`);
     await io.cp(source, target);
