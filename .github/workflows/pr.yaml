@@ -40,4 +40,4 @@ jobs:
 
       - name: Check result
         run: |
-          echo '${{ steps.test.output.stdout }}'
+          echo '${{ steps.test.outputs.stdout }}'
