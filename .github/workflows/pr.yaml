@@ -33,5 +33,11 @@ jobs:
           api-token: ${{ secrets.AIRFOLD_API_KEY }}
 
       - name: Test
+        id: test
         run: |
-          af 
+          af source ls
+          af pipe ls
+
+      - name: Check result
+        run: |
+          echo '${{ steps.test.output.stdout }}'
