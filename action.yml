@@ -1,0 +1,25 @@
+name: 'Airfold - Setup Airfold CLI'
+description: 'Sets up Airfold CLI in your GitHub Actions workflow.'
+author: 'Airfold'
+inputs:
+  api-url:
+    description: 'The hostname of an Airfold API server. Defaults to `https://api.airfold.co`.'
+    default: 'https://api.airfold.co'
+    required: false
+  api-token:
+    description: 'The API token for an Airfold API server. Token with full access to the workspace is usually needed.'
+    required: true
+  airfold-version:
+    description: 'The version of Airfold CLI to install. Instead of full version string you can also specify constraint string starting with "<" (for example `<1.13.0`) to install the latest version satisfying the constraint. A value of `latest` will install the latest version of Airfold CLI. Defaults to latest.'
+    default: ''
+    required: false
+  use-wrapper:
+    description: 'Whether or not to install a wrapper to wrap subsequent calls of the `af` binary and expose its STDOUT, STDERR, and exit code as outputs named `stdout`, `stderr`, and `exitcode` respectively. Defaults to `true`.'
+    default: 'true'
+    required: false
+runs:
+  using: 'node20'
+  main: 'dist/index.cjs'
+branding:
+  icon: 'send'
+  color: 'red'
