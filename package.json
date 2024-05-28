@@ -1,5 +1,14 @@
 {
   "name": "setup-airfold",
+  "version": "1.0.1",
+  "description": "Setup Airfold CLI for GitHub Actions",
+  "license": "MIT",
+  "publisher": "airfold",
+  "main": "dist/index.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/airfold/setup-airfold.git"
+  },
   "packageManager": "yarn@4.2.2",
   "devDependencies": {
     "@babel/core": "^7.24.6",
